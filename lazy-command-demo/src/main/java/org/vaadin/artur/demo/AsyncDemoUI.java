@@ -19,10 +19,10 @@ import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
 
 @Theme("valo")
-public class AdvancedDemoUI extends UI {
+public class AsyncDemoUI extends UI {
 
-	@WebServlet(value = "/advanced/*", asyncSupported = true)
-	@VaadinServletConfiguration(productionMode = false, ui = AdvancedDemoUI.class)
+	@WebServlet(value = "/async/*", asyncSupported = true)
+	@VaadinServletConfiguration(productionMode = false, ui = AsyncDemoUI.class)
 	public static class Servlet extends VaadinServlet {
 	}
 
