@@ -28,8 +28,10 @@ public class SimpleDemoUI extends UI {
 	@Override
 	protected void init(VaadinRequest request) {
 		final VerticalLayout layout = new VerticalLayout();
-		layout.setSizeFull();
+		layout.setWidth("100%");
 		setContent(layout);
+		Link link = new Link("Advanced demo", new ExternalResource("../advanced/"));
+		layout.addComponent(link);
 
 		Panel p = new Panel("Complex content");
 		p.setWidth("500px");
