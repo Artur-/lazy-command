@@ -84,7 +84,7 @@
 		</dependency>
 		<dependency>
 			<groupId>com.vaadin</groupId>
-			<artifactId>vaadin-client-compiler</artifactId>
+			<artifactId>vaadin-client-compiled</artifactId>
 			<version>${vaadin.version}</version>
 		</dependency>
 		<dependency>
@@ -138,7 +138,6 @@
 						**/VAADIN/gwt-unitCache/**,
 						**/VAADIN/widgetsets/WEB-INF/**,
 						**/WEB-INF/lib/servlet-api-*.jar,
-						**/WEB-INF/lib/vaadin-client-*.jar,
 						**/WEB-INF/lib/jetty-*.jar,
 						**/WEB-INF/lib/ant-*.jar,
 						**/WEB-INF/classes/gwt-unitCache/**,

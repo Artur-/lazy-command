@@ -21,7 +21,7 @@ import com.vaadin.ui.VerticalLayout;
 public class SimpleDemoUI extends UI {
 
 	@WebServlet(value = "/*", asyncSupported = true)
-	@VaadinServletConfiguration(productionMode = false, ui = SimpleDemoUI.class, widgetset = "org.vaadin.artur.demo.DemoWidgetSet")
+	@VaadinServletConfiguration(productionMode = false, ui = SimpleDemoUI.class)
 	public static class Servlet extends VaadinServlet {
 	}
 
@@ -30,8 +30,7 @@ public class SimpleDemoUI extends UI {
 		final VerticalLayout layout = new VerticalLayout();
 		layout.setWidth("100%");
 		setContent(layout);
-		Link link = new Link("Advanced demo", new ExternalResource("../advanced/"));
-		layout.addComponent(link);
+		layout.addComponent(new DemoNavi());
 
 		Panel p = new Panel("Complex content");
 		p.setWidth("500px");
